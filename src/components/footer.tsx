@@ -24,7 +24,7 @@ const FooterSection: React.FC = () => {
               insights.
             </p>
             <div>
-              <Button className="bg-[#D7F85C] text-black px-4 py-2 rounded-full font-semibold">
+              <Button className="bg-[#F2FF79] text-black px-4 py-2 rounded-full font-semibold">
                 Become an Agent
               </Button>
             </div>
@@ -57,7 +57,7 @@ const FooterSection: React.FC = () => {
               collaborate to uplift the farming communities sustainably.
             </p>
             <div className="">
-                <Button className="bg-[#D7F85C] text-black px-4 py-2 rounded-full font-semibold">
+                <Button className="bg-[#F2FF79] text-black px-4 py-2 rounded-full font-semibold">
                   Become a Partner
                 </Button>
             </div>
@@ -118,21 +118,24 @@ const FooterSection: React.FC = () => {
           <input
             type="text"
             placeholder="Enter your name"
-            className="px-4 py-2 rounded-md bg-[#153A2D] border border-gray-600 text-white"
+            className="px-4 py-2 rounded-md bg-[#153A2D] border border-gray-600 text-white 
+             focus:border-[#F2FF79] focus:outline-none focus:ring-0"
           />
           <input
             type="email"
             placeholder="Enter your email"
-            className="px-4 py-2 rounded-md bg-[#153A2D] border border-gray-600 text-white"
+            className="px-4 py-2 rounded-md bg-[#153A2D] border border-gray-600 text-white 
+             focus:border-[#F2FF79] focus:outline-none focus:ring-0"
           />
           <textarea
             placeholder="Your message"
             rows={4}
-            className="px-4 py-2 rounded-md bg-[#153A2D] border border-gray-600 text-white"
+            className="px-4 py-2 rounded-md bg-[#153A2D] border border-gray-600 text-white 
+             focus:border-[#F2FF79] focus:outline-none focus:ring-0"
           ></textarea>
           <button
             type="submit"
-            className="bg-[#D7F85C] text-black font-semibold px-4 py-2 rounded-full self-start"
+            className="bg-[#F2FF79] text-black font-semibold px-4 py-2 rounded-full self-start"
           >
             Leave us a Message
           </button>

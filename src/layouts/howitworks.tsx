@@ -77,7 +77,7 @@ export const HowItWorksSection: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={stepInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex items-start gap-4 bg-[#F9F9F9] p-4 rounded-lg"
+              className="flex justify-between items-start gap-4 bg-[#F9F9F9] p-4 rounded-lg"
             >
               <div>
                 <h3 className="text-lg font-semibold">{step.title}</h3>

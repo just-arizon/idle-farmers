@@ -43,22 +43,22 @@ const faqSections = [
           "You can enrol through a local Idlefarmer agent, through our website, or by calling our toll-free line. Our agents will help profile you and onboard your farm. ",
       },
       {
-        question: " What services can I access as a farmer? ",
+        question: "What services can I access as a farmer? ",
         answer:
           "Farmers receive access to inputs, tractor services, market information, and training.",
       },
       {
-        question: " Can I place orders for inputs on my own?  ",
+        question: "Can I place orders for inputs on my own?  ",
         answer:
           "No, it is more cost-effective to order through an agent who can help aggregate orders and effect reduced prices.",
       },
       {
-        question: "  What if I don’t have access to a smartphone? ",
+        question: "What if I don’t have access to a smartphone?",
         answer:
           "No problem. Our hyperlocal agents serve as your digital bridge, helping you access services even if you don’t have a smartphone or internet access.",
       },
       {
-        question: "  How are prices set for inputs and tractors? ",
+        question: "How are prices set for inputs and tractors? ",
         answer:
           "Prices are negotiated with suppliers and tractor owners to ensure fairness, quality, and cost-effectiveness. You will receive pricing details before confirming any request.",
       },
@@ -68,12 +68,12 @@ const faqSections = [
     title: "For Agents",
     faqs: [
       {
-        question: " Who can become an Idlefarmer agent? ",
+        question: "Who can become an Idlefarmer agent? ",
         answer:
           "Anyone with a passion for agriculture and community support—extension workers, agro-dealers, graduates, or rural mobilizers as an independent entrepreneur.",
       },
       {
-        question: " How do I apply to become an agent?",
+        question: "How do I apply to become an agent?",
         answer:
           "Visit our “Become an Agent” page to apply online, or talk to a regional Idlefarmer coordinator. ",
       },
@@ -83,17 +83,17 @@ const faqSections = [
     title: "For Tractor Owners",
     faqs: [
       {
-        question: "  How do I register my tractor on Idlefarmer?  ",
+        question: "How do I register my tractor on Idlefarmer?  ",
         answer:
           "Tractor owners can register via a verified Idlefarmer admin or regional coordinator. You’ll provide your tractor details, location, and availability.",
       },
       {
-        question: "  What kind of tractors are accepted?",
+        question: "What kind of tractors are accepted?",
         answer:
           "All operational tractors with key implements (e.g., ploughs, harrows) are accepted. Additional machinery like planters or sprayers are also welcome. ",
       },
       {
-        question: "   How do I get paid for services rendered?",
+        question: "How do I get paid for services rendered?",
         answer:
           "Tractor owners are paid per job based on agreed rates. Idlefarmer handles logistics and coordinates with farmers and agents for booking.",
       },
@@ -103,17 +103,17 @@ const faqSections = [
     title: "For Partnerships",
     faqs: [
       {
-        question: " . Can NGOs and government agencies partner with Idlefarmer? ",
+        question: "Can NGOs and government agencies partner with Idlefarmer? ",
         answer:
           "Yes. We collaborate with partners on agricultural programs, financing initiatives, climate-smart agriculture, and farmer support. ",
       },
       {
-        question: "  How does Idlefarmer support data-driven development? ",
+        question: "How does Idlefarmer support data-driven development?",
         answer:
           "We collect real-time data on farmer needs, yields, and service gaps to power insights for partners. This helps with targeting, monitoring, and impact evaluation.  ",
       },
       {
-        question: " How can I start a partnership?  ",
+        question: "How can I start a partnership?",
         answer:
           "Visit our “Partner With Us” page or email: partnerships@idlefarmer.africa. ",
       },
@@ -123,12 +123,12 @@ const faqSections = [
     title: "Support & Technical Issues",
     faqs: [
       {
-        question: "  Do you have a mobile app?  ",
+        question: "Do you have a mobile app?",
         answer:
           "For now, services are accessed via agents and our web app. ",
       },
       {
-        question: " Can I give feedback about the platform?",
+        question: "Can I give feedback about the platform?",
         answer:
           "Yes! After every service, you can rate your experience. You can also leave suggestions via the “Feedback” section or through your local agent. ",
       },
