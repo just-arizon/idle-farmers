@@ -3,7 +3,7 @@ import { Link } from "@heroui/link";
 
 import { siteConfig } from "@/config/site";
 
-import { DefaultLayout } from "@/layouts/default";
+import DefaultLayout from "@/layouts/default";
 import { motion } from "framer-motion";
 import TractorImg from "../assets/Tractor-Transparent-Free-PNG 1.png";
 import { Navbar } from "@/components/navbar";
