@@ -9,6 +9,7 @@ import { Navbar } from "@/components/navbar";
 import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
+import { HowItWorksSection } from "@/layouts/howitworks";
 
 
 export const MailIcon = () => {
@@ -96,6 +97,8 @@ export default function IndexPage() {
           </div>
         </div>
       </motion.div>
+
+      <HowItWorksSection />
     </DefaultLayout>
   );
 }
