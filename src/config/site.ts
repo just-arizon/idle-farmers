@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Idle Farmers",
-  description: "Make beautiful websites regardless of your design experience.",
+  description: "Access tractors, bullk inputs, and farm support exclusively",
   navItems: [
     {
       label: "Financial Inclusion",
