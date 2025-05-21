@@ -42,7 +42,7 @@ export const WhyChooseUsSection: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="py-8 px-4">
+    <section className="pb-16 px-4">
       <div className="text-center mb-10">
         <span className="px-4 py-1 bg-[#f9f9f9] border border-black text-[#0E0E0E] text-sm font-medium rounded-full">
           Why choose Idefarmer?

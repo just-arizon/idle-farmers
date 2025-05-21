@@ -4,9 +4,13 @@ import { Image } from "@heroui/image";
 import { motion } from "framer-motion";
 import LaptopImg from "../assets/desktop.png";
 import partnerBanner from "../assets/partner-banner.png";
+import { Button } from "@heroui/button";
+
+
+
 const FooterSection: React.FC = () => {
   return (
-    <footer className="lg:px-20 px-8 bg-[#0B342A] text-white  rounded-t-[3vw]">
+    <footer className="lg:px-20 px-5 bg-[#0B342A] text-white  rounded-t-[3vw]">
       {/* Top CTA Blocks */}
       <div className="grid lg:grid-rows-1 md:grid-cols-1 gap-4  py-12 max-w-7xl mx-auto">
         {/* Left CTA */}
@@ -20,9 +24,9 @@ const FooterSection: React.FC = () => {
               insights.
             </p>
             <div>
-              <button className="bg-[#D7F85C] text-black px-4 py-2 rounded-full font-semibold">
+              <Button className="bg-[#D7F85C] text-black px-4 py-2 rounded-full font-semibold">
                 Become an Agent
-              </button>
+              </Button>
             </div>
           </div>
           {/* Placeholder for Device Image */}
@@ -46,24 +50,24 @@ const FooterSection: React.FC = () => {
           <div className="absolute inset-0 bg-black bg-opacity-50 rounded-3xl"></div>
 
           {/* Content */}
-          <div className="relative z-10 text-center text-white flex flex-col gap-3">
-            <h2 className="text-3xl font-semibold mb-2">Partner With Us</h2>
+          <div className="relative z-10 text-center text-white flex flex-col lg:gap-3">
+            <h2 className="lg:text-3xl text-2xl font-semibold mb-2">Partner With Us</h2>
             <p className="text-sm mb-4 max-w-md">
               Are you an NGO, agribusiness or government agency? Let’s
               collaborate to uplift the farming communities sustainably.
             </p>
             <div className="">
-                <button className="bg-[#D7F85C] text-black px-4 py-2 rounded-full font-semibold">
+                <Button className="bg-[#D7F85C] text-black px-4 py-2 rounded-full font-semibold">
                   Become a Partner
-                </button>
+                </Button>
             </div>
           </div>
         </div>
       </div>
 
-      <section className="flex lg:justify-center mx-auto px-6">
+      <section className="flex lg:justify-center ">
         {/* Footer Main Grid */}
-        <div className="border-t border-gray-700 py-10    md:grid-cols-2 grid-cols-1 grid lg:grid-cols-4 lg:gap-12 gap-12 text-sm">
+        <div className="border-t border-gray-700 py-10    md:grid-cols-2 grid-cols-1 grid lg:grid-cols-4 lg:gap-12 gap-12 text-sm w-full">
           {/* Contact Info */}
           <div className="grid gap-2">
             <h3 className="font-bold mb-3 ">Head Office</h3>
@@ -109,7 +113,7 @@ const FooterSection: React.FC = () => {
       </section>
 
       {/* Contact Form */}
-      <div className="border-t border-gray-700 py-8 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
+      <div className="border-t border-gray-700 py-8  max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
         <form className="flex flex-col gap-4 max-w-md">
           <input
             type="text"
