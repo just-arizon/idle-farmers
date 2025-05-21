@@ -11,6 +11,7 @@ import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
 import { HowItWorksSection } from "@/layouts/howitworks";
 import { WhyChooseUsSection } from "@/layouts/whychooseus";
+import { Faq } from "@/layouts/faq";
 
 
 export const MailIcon = () => {
@@ -101,6 +102,7 @@ export default function IndexPage() {
 
       <HowItWorksSection />
       <WhyChooseUsSection />
+      <Faq />
     </DefaultLayout>
   );
 }

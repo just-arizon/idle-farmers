@@ -43,11 +43,16 @@ export const WhyChooseUsSection: React.FC = () => {
 
   return (
     <section className="pb-16 px-4">
-      <div className="text-center mb-10">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 0.5 }}
+        className="text-center mb-10"
+      >
         <span className="px-4 py-1 bg-[#f9f9f9] border border-black text-[#0E0E0E] text-sm font-medium rounded-full">
           Why choose Idefarmer?
         </span>
-      </div>
+      </motion.div>
 
       <div className="max-w-5xl mx-auto flex flex-col gap-6" ref={ref}>
         {reasons.map((item, index) => {
