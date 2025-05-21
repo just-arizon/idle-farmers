@@ -10,6 +10,7 @@ import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
 import { HowItWorksSection } from "@/layouts/howitworks";
+import { WhyChooseUsSection } from "@/layouts/whychooseus";
 
 
 export const MailIcon = () => {
@@ -99,6 +100,7 @@ export default function IndexPage() {
       </motion.div>
 
       <HowItWorksSection />
+      <WhyChooseUsSection />
     </DefaultLayout>
   );
 }
