@@ -40,7 +40,6 @@ const reasons: ReasonItem[] = [
 
 export const WhyChooseUsSection: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true });
 
   return (
     <section className="py-8 px-4">
