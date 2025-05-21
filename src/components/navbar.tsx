@@ -14,10 +14,9 @@ import {
 
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
+
 import {
 
-  GithubIcon,
   SearchIcon,
 } from "@/components/icons";
 
@@ -47,7 +46,7 @@ export const Navbar = () => {
   return (
     <HeroUINavbar
       // position="sticky"
-      className="bg-[#18332F]  py-5 container mx-auto"
+      className="bg-[#18332F]  lg:py-5 lg:container mx-auto"
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
@@ -97,27 +96,17 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
-        <ThemeSwitch />
-        <NavbarMenuToggle />
+      <NavbarContent className="lg:hidden flex basis-1 pl-4" justify="end">
+        <NavbarMenuToggle className="text-[#F2FF79]"/>
       </NavbarContent>
 
       <NavbarMenu>
-        {searchInput}
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+        
+        <div className="mx-0 mt-2 flex flex-col gap-2 ">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
+                className="text-sm font-normal text- hover:text-[#F2FF79]"
                 href="#"
                 size="lg"
               >
