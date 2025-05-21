@@ -1,5 +1,5 @@
 import FooterSection from "@/components/footer";
-import { Link } from "@heroui/link";
+
 
 
 
