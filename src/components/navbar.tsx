@@ -32,7 +32,7 @@ export const Navbar = () => {
             color="foreground"
             href="/"
           >
-            <h1 className="text-xl font-bold text-white">IDLEFARMERS</h1>
+            <h1 className="text-xl font-bold text-white">IdleFarmer</h1>
           </Link>
         </NavbarBrand>
       </NavbarContent>

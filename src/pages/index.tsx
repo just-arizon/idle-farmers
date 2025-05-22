@@ -66,20 +66,22 @@ export default function IndexPage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.4, duration: 0.5 }}
-                  className="flex  md:flex-row flex-col lg:flex-row gap-2 mt-10"
+                  className="flex  md:flex-row flex-col lg:flex-row lg:gap-3 gap-5 mt-10"
                 >
-                  <div className="flex items-end">
+                  <div className="w-3/4">
                     <Input
                       placeholder="What is your location?"
                       labelPlacement="outside"
                       type="text"
                       variant="underlined"
-                      color="foreground"
+                      color="default" 
                       classNames={{
-                        input: "text-white placeholder-white", // ✅
-                        inputWrapper: "border-white",
+                        input: "!text-white !placeholder-gray",
+                        inputWrapper: "!border-white",
+                        innerWrapper: "text-white",
+                        label: "!text-white",
                       }}
-                      startContent={<MailIcon />}
+                      startContent={<MailIcon  />} // icon color
                     />
                   </div>
 
