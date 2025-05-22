@@ -158,7 +158,10 @@ const FooterSection: React.FC = () => {
           </div>
           <div className="flex lg:justify-end gap-4 ">
             <div className="">
-              <p className="text-white font-bold text-lg">IDLEFARMERS</p>
+              <h1 className=" text-xl font-bold text-white">
+              <span className="text-xl self-center ">IdleFarmer</span>
+              <span className="text-[#F2FF79] text-3xl font-extrabold">.</span>
+            </h1>
               <p className="text-sm text-gray-300 mt-1">Copyright © 2024</p>
             </div>
           </div>

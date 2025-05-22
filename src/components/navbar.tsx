@@ -34,7 +34,7 @@ export const Navbar = () => {
           >
             <h1 className=" text-xl font-bold text-white">
               <span className="text-xl self-center">IdleFarmer</span>
-              <span className="text-[#F2FF79] text-3xl ml-2">.</span>
+              <span className="text-[#F2FF79] text-3xl font-extrabold">.</span>
             </h1>
           </Link>
         </NavbarBrand>
