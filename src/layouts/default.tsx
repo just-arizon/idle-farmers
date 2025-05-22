@@ -1,4 +1,6 @@
 import FooterSection from "@/components/footer";
+// import { Navbar } from "@/components/navbar";
+
 
 
 

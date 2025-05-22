@@ -163,10 +163,10 @@ export const Faq: React.FC = () => {
         {faqSections.map((section, secIndex) => (
           <div key={secIndex} className="mb-10">
             <h3 className="text-xl font-bold mb-4">{section.title}</h3>
-            <Accordion type="multiple" className="w-full">
+            <Accordion type="multiple" className="w-full  ">
               {section.faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${secIndex}-${index}`}>
-                  <AccordionTrigger>{faq.question}</AccordionTrigger>
+                  <AccordionTrigger className="text-start">{faq.question}</AccordionTrigger>
                   <AccordionContent>{faq.answer}</AccordionContent>
                 </AccordionItem>
               ))}
