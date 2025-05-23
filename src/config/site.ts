@@ -1,28 +1,28 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Idle Farmers",
+  name: "Idle Farmer",
   description: "Access tractors, bullk inputs, and farm support exclusively",
   navItems: [
     {
-      label: "Financial Inclusion",
+      label: "Blog",
       href: "/",
     },
-    {
-      label: "Privacy Policy",
-      href: "/docs",
-    },
+    // {
+    //   label: "Privacy Policy",
+    //   href: "/docs",
+    // },
 
   ],
   navMenuItems: [
     {
-      label: "Financial Inclusion",
+      label: "Blog",
       href: "/financial-inclusion",
     },
-    {
-      label: "Privacy Policy",
-      href: "/privacy",
-    }
+    // {
+    //   label: "Privacy Policy",
+    //   href: "/privacy",
+    // }
   ],
   links: {
     github: "https://github.com/frontio-ai/heroui",
