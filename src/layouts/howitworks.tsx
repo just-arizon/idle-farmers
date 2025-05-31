@@ -19,31 +19,31 @@ const steps: StepItem[] = [
   {
     title: "Request Mechanization Services",
     description: "Agents schedule tractors and manage logistics.",
-    icon: <img src={Wrench} alt="Wrench icon" className="w-10" />,
+    icon: <img src={Wrench} alt="Wrench icon" className="lg:w-10 w-12" />,
   },
   {
     title: "Bulk Input Ordering",
     description:
       "Order quality seeds and fertilizers collectively and save more.",
-    icon: <img src={Ordering} alt="Order icon" className="w-10" />,
+    icon: <img src={Ordering} alt="Order icon" className="lg:w-10 w-12" />,
   },
   {
     title: "Real-Time Support",
     description:
       "Get seasonal, on-demand assistance from trusted hyper-local agents.",
-    icon: <img src={Support} alt="Support icon" className="w-10" />,
+    icon: <img src={Support} alt="Support icon" className="lg:w-10 w-12" />,
   },
   {
     title: "Data-Driven Insights",
     description:
       "Track farm performance, get tailored tips, and optimize productivity.",
-    icon: <img src={Graph} alt="Support icon" className="w-10" />,
+    icon: <img src={Graph} alt="Support icon" className="lg:w-10 w-12" />,
   },
   {
     title: "Financial Inclusion",
     description:
       "Access microloans, insurance, and savings with data-backed creditworthiness.",
-    icon: <img src={Bank} alt="Support icon" className="w-10" />,
+    icon: <img src={Bank} alt="Support icon" className="lg:w-10 w-12" />,
   },
 ];
 

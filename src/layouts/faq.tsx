@@ -144,7 +144,7 @@ export const Faq: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="px-4 pb-16 flex flex-col items-center bg-white"
+      className="px-4 py-12 flex flex-col items-center bg-white"
     >
       <div className="w-full max-w-5xl">
         {/* Section Header */}

@@ -13,6 +13,7 @@ import { HowItWorksSection } from "@/layouts/howitworks";
 import { WhyChooseUsSection } from "@/layouts/whychooseus";
 import { TrustedByFarmers } from "@/layouts/trustedbyfarmers";
 import { Faq } from "@/layouts/faq";
+import { WeAreActive } from "@/layouts/weareactive";
 
 export const MailIcon = () => {
   return (
@@ -116,6 +117,7 @@ export default function IndexPage() {
 
       <HowItWorksSection />
       <WhyChooseUsSection />
+      <WeAreActive />
       <TrustedByFarmers />
       <Faq />
     </DefaultLayout>

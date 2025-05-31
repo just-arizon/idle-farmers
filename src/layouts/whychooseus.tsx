@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 
 import Coins from "../assets/icons/coins.png"
 import Tractor  from "../assets/icons/tractor.png"
-import Support  from "../assets/icons/support.png"
+import Support  from "../assets/icons/support.svg"
 import Graph  from "../assets/icons/graph.png"
 
 interface ReasonItem {
@@ -18,27 +18,27 @@ const reasons: ReasonItem[] = [
   {
     title: "Cost Savings",
     description: "Up to 30% savings via input demand aggregation",
-    icon: <img src={Coins} alt="Coins icon" className="w-16 md:w-10" />,
+    icon: <img src={Coins} alt="Coins icon" className="lg:w-10 w-12" />,
     bg: "bg-[#18332F] text-white",
   },
   {
     title: "Access Mechanization",
     description: "Timely, easy-to-book and share tractors",
-    icon: <img src={Tractor} alt="Tractor icon" className="w-16 md:w-10" />,
+    icon: <img src={Tractor} alt="Tractor icon" className="lg:w-10 w-12" />,
     bg: "bg-[#f9f9f9]",
   },
   {
     title: "Data-driven Insights",
     description:
       "Make smarter farm and decisions with real-time agroeconomic insights for farmers",
-    icon: <img src={Graph} alt="Graph icon" className="w-16 md:w-10" />,
+    icon: <img src={Graph} alt="Graph icon" className="lg:w-10 w-12" />,
     bg: "bg-[#18332F] text-white",
   },
   {
     title: "Hyper Local Support",
     description:
       "Local trusted hyperlocal agents always available to support and bridge the gap between our technology and the farmers we target.",
-    icon: <img src={Support} alt="Support icon" className="w-16 md:w-10" />,
+    icon: <img src={Support} alt="Support icon" className="lg:w-10 w-12 " />,
     bg: "bg-[#f9f9f9]",
   },
 ];
@@ -75,7 +75,7 @@ export const WhyChooseUsSection: React.FC = () => {
             >
               <div>
                 <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                <p className="text-sm">{item.description}</p>
+                <p className="text-sm w-52 lg:w-72">{item.description}</p>
               </div>
               <div>{item.icon}</div>
             </motion.div>

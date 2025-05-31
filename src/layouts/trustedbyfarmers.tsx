@@ -41,7 +41,7 @@ export const TrustedByFarmers: React.FC = () => {
         perPage: 3,
         gap: "1rem",
         autoScroll: {
-          speed: 0.5,
+          speed: 1,
         },
         breakpoints: {
           768: {
@@ -87,7 +87,7 @@ export const TrustedByFarmers: React.FC = () => {
                 >
                   <div className="mb-2">⭐⭐⭐⭐⭐</div>
                   <p className="text-sm">{t.text}</p>
-                  <div className="mt-6">
+                  <div className="mt-6 border-t-1 border-t-[#B9B9B999]">
                     <p className="font-semibold">{t.name}</p>
                     <p className="text-sm text-green-100">{t.role}</p>
                   </div>
