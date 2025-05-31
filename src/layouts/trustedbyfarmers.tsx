@@ -1,94 +1,102 @@
-import {
-  WrenchScrewdriverIcon,
-  DocumentDuplicateIcon,
-  ClockIcon,
-  ChartBarIcon,
-  BanknotesIcon,
-} from "@heroicons/react/24/outline";
+import React, { useEffect, useRef } from "react";
+import Splide from "@splidejs/splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+import "@splidejs/splide/dist/css/splide.min.css";
 
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-
-interface StepItem {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-}
-
-const steps: StepItem[] = [
+const testimonials = [
   {
-    title: "Request Mechanization Services",
-    description: "Agents schedule tractors and manage logistics.",
-    icon: <WrenchScrewdriverIcon className="w-8 h-8 text-green-600" />,
+    name: "Stephen Mitchell",
+    role: "CEO, Green Fields Co-op",
+    text: "Idlefarmer has revolutionized our farming operations...",
+    image:
+      "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=800&q=60",
   },
   {
-    title: "Bulk Input Ordering",
-    description:
-      "Order quality seeds and fertilizers collectively and save more.",
-    icon: <DocumentDuplicateIcon className="w-8 h-8 text-green-600" />,
+    name: "Sarah Johnson",
+    role: "Farmer, Sunrise Farms",
+    text: "Thanks to Idlefarmer, I’ve been able to access quality inputs at a fair price.",
+    image:
+      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&q=60",
   },
   {
-    title: "Real-Time Support",
-    description:
-      "Get seasonal, on-demand assistance from trusted hyper-local agents.",
-    icon: <ClockIcon className="w-8 h-8 text-green-600" />,
-  },
-  {
-    title: "Data-Driven Insights",
-    description:
-      "Track farm performance, get tailored tips, and optimize productivity.",
-    icon: <ChartBarIcon className="w-8 h-8 text-green-600" />,
-  },
-  {
-    title: "Financial Inclusion",
-    description:
-      "Access microloans, insurance, and savings with data-backed creditworthiness.",
-    icon: <BanknotesIcon className="w-8 h-8 text-green-600" />,
+    name: "John Doe",
+    role: "Agritech Specialist",
+    text: "A brilliant platform that empowers local farmers in ways we've never seen before.",
+    image:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=60",
   },
 ];
 
-export const HowItWorksSection: React.FC = () => {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true });
+export const TrustedByFarmers: React.FC = () => {
+  const splideRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (splideRef.current) {
+      const splide = new Splide(splideRef.current, {
+        type: "loop",
+        drag: "free",
+        focus: "center",
+        pagination: false,
+        arrows: false,
+        perPage: 3,
+        gap: "1rem",
+        autoScroll: {
+          speed: 0.5,
+        },
+        breakpoints: {
+          768: {
+            perPage: 1,
+          },
+        },
+        extensions: { AutoScroll },
+      });
+
+      splide.mount({ AutoScroll });
+    }
+  }, []);
 
   return (
-    <motion.div
-      className="py-12 bg-white"
-      ref={sectionRef}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
+    <div className="py-12 bg-white">
       <div className="text-center mb-8">
         <span className="px-4 py-1 bg-[#f9f9f9] border border-black text-[#0E0E0E] text-sm font-medium rounded-full">
-          How it works
+          Trusted by farmers across Nigeria
         </span>
+
+        <div className="flex flex-col gap-3 my-8 items-center">
+          <h3 className="text-2xl font-bold max-w-lg">
+            Join a growing ecosystem of farmers transforming their practices.
+          </h3>
+          <p>
+            Experience increased yields, reduced costs, and a supportive
+            network.
+          </p>
+        </div>
       </div>
 
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 px-4 max-w-5xl rounded-2xl p-6">
-        {steps.map((step, index) => {
-          const stepRef = useRef(null);
-          const stepInView = useInView(stepRef, { once: true });
-
-          return (
-            <motion.div
-              ref={stepRef}
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={stepInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex justify-between items-start gap-4 bg-[#F9F9F9] p-4 rounded-lg"
-            >
-              <div>
-                <h3 className="text-lg font-semibold">{step.title}</h3>
-                <p className="text-sm text-gray-600">{step.description}</p>
-              </div>
-              <div>{step.icon}</div>
-
-            </motion.div>
-          );
-        })}
+      <div ref={splideRef} className="splide max-w-6xl mx-auto px-4">
+        <div className="splide__track">
+          <ul className="splide__list">
+            {testimonials.map((t, i) => (
+              <li key={i} className="splide__slide">
+                <div
+                  className="text-white p-6 rounded-2xl shadow-lg"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #18332F 0%, #009680 100%)",
+                  }}
+                >
+                  <div className="mb-2">⭐⭐⭐⭐⭐</div>
+                  <p className="text-sm">{t.text}</p>
+                  <div className="mt-6">
+                    <p className="font-semibold">{t.name}</p>
+                    <p className="text-sm text-green-100">{t.role}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
