@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { FaTractor, FaCoins, FaChartBar, FaHandsHelping } from "react-icons/fa";
 
 
 import Coins from "../assets/icons/coins.png"

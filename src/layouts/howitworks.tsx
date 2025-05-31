@@ -1,10 +1,3 @@
-import {
-  WrenchScrewdriverIcon,
-  DocumentDuplicateIcon,
-  ClockIcon,
-  ChartBarIcon,
-  BanknotesIcon,
-} from "@heroicons/react/24/outline";
 
 import Wrench  from "../assets/icons/la_tractor.png"
 import Support  from "../assets/icons/fluent_person-support-16-regular.png"
