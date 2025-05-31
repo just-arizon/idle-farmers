@@ -2,6 +2,12 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaTractor, FaCoins, FaChartBar, FaHandsHelping } from "react-icons/fa";
 
+
+import Coins from "../assets/icons/coins.png"
+import Tractor  from "../assets/icons/tractor.png"
+import Support  from "../assets/icons/support.png"
+import Graph  from "../assets/icons/graph.png"
+
 interface ReasonItem {
   title: string;
   description: string;
@@ -13,27 +19,27 @@ const reasons: ReasonItem[] = [
   {
     title: "Cost Savings",
     description: "Up to 30% savings via input demand aggregation",
-    icon: <FaCoins className="text-yellow-400 w-10 h-10" />,
+    icon: <img src={Coins} alt="Coins icon" className="w-16 md:w-10" />,
     bg: "bg-[#18332F] text-white",
   },
   {
     title: "Access Mechanization",
     description: "Timely, easy-to-book and share tractors",
-    icon: <FaTractor className="text-green-700 w-10 h-10" />,
+    icon: <img src={Tractor} alt="Tractor icon" className="w-16 md:w-10" />,
     bg: "bg-[#f9f9f9]",
   },
   {
     title: "Data-driven Insights",
     description:
       "Make smarter farm and decisions with real-time agroeconomic insights for farmers",
-    icon: <FaChartBar className="text-white w-10 h-10" />,
+    icon: <img src={Graph} alt="Graph icon" className="w-16 md:w-10" />,
     bg: "bg-[#18332F] text-white",
   },
   {
     title: "Hyper Local Support",
     description:
       "Local trusted hyperlocal agents always available to support and bridge the gap between our technology and the farmers we target.",
-    icon: <FaHandsHelping className="text-red-400 w-10 h-10" />,
+    icon: <img src={Support} alt="Support icon" className="w-16 md:w-10" />,
     bg: "bg-[#f9f9f9]",
   },
 ];
@@ -66,7 +72,7 @@ export const WhyChooseUsSection: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`flex justify-between items-center p-6 rounded-xl ${item.bg}`}
+              className={`flex justify-between gap-4 items-center p-6 rounded-xl ${item.bg}`}
             >
               <div>
                 <h3 className="text-xl font-bold mb-1">{item.title}</h3>
