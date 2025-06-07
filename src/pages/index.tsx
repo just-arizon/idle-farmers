@@ -15,6 +15,8 @@ import { WhyChooseUsSection } from "@/layouts/whychooseus";
 import { TrustedByFarmers } from "@/layouts/trustedbyfarmers";
 import { Faq } from "@/layouts/faq";
 import { WeAreActive } from "@/layouts/weareactive";
+import { PartnersLogos } from "@/layouts/partnerslogos";
+
 
 export const MailIcon = () => (
   <svg
@@ -138,6 +140,7 @@ export default function IndexPage() {
       </motion.div>
 
       {/* Other Sections */}
+      <PartnersLogos />
       <HowItWorksSection />
       <WhyChooseUsSection />
       <WeAreActive />
