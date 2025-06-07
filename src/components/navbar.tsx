@@ -23,7 +23,7 @@ export const Navbar = () => {
   return (
     <HeroUINavbar
       position="sticky"
-      className="bg-[#18332F]  lg:py-1 "
+      className="bg-[#18332F]  lg:py-1"
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">

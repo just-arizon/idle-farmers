@@ -3,9 +3,10 @@ import { Link } from "@heroui/link";
 import { siteConfig } from "@/config/site";
 import DefaultLayout from "@/layouts/default";
 import { AnimatePresence, motion } from "framer-motion";
-import TractorImg1 from "../assets/Tractor.png";
-import TractorImg2 from "../assets/Plateau.svg";
-import TractorImg3 from "../assets/Kaduna.svg";
+import TractorImg1 from "../assets/Tractor.svg";
+import TractorImg2 from "../assets/farmer.svg";
+import TractorImg3 from "../assets/fertilisers.png";
+import TractorImg4 from "../assets/chemicals.svg";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
@@ -16,7 +17,12 @@ import { Faq } from "@/layouts/faq";
 import { WeAreActive } from "@/layouts/weareactive";
 
 export const MailIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 512 512"
+  >
     <circle cx="256" cy="192" r="32" fill="#fff" />
     <path
       fill="#fff"
@@ -25,7 +31,7 @@ export const MailIcon = () => (
   </svg>
 );
 
-const tractorImages = [TractorImg1, TractorImg2, TractorImg3];
+const tractorImages = [TractorImg1, TractorImg2, TractorImg3, TractorImg4];
 
 export default function IndexPage() {
   const [index, setIndex] = useState(0);
@@ -39,7 +45,7 @@ export default function IndexPage() {
 
   return (
     <DefaultLayout>
-        <Navbar />
+      <Navbar />
 
       <motion.div
         initial={{ y: -400 }}
@@ -47,19 +53,19 @@ export default function IndexPage() {
         transition={{ duration: 1, ease: "easeInOut" }}
         className="bg-[#18332F] lg:flex-col justify-between rounded-b-[3vw]"
       >
-        <div className="mx-auto lg:flex justify-center px-5 py-10 lg:py-0 bg-purple-">
+        <div className="mx-auto lg:flex container py-10 lg:py-0 bg-purple- px-5 lg:px-0">
           <div className="w-full lg:flex md:flex  bg-yellow-">
             {/* Left Section */}
-            <div className="mb-12 lg:mb-0  lg:w-1/2 flex lg:justify-end pr-5 items-center">
+            <div className="mb-12 lg:mb-0  lg:w-1/2 flex lg:justify-center items-center bg-slate-">
               <div className="">
                 <motion.h1
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1, duration: 0.5 }}
-                  className="text-5xl font-medium text-white flex flex-col"
+                  className="text-5xl font-medium text-white flex flex-col gap-3"
                 >
-                  <span>Empowering Farmers.</span>
-                  <span>Feeding Africa.</span>
+                  <span>Empowering Farmers </span>
+                  <span>That Feed Africa.</span>
                 </motion.h1>
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -67,7 +73,7 @@ export default function IndexPage() {
                   transition={{ delay: 1.2, duration: 0.5 }}
                   className="text-[16px] text-white mt-4 font-light w-full"
                 >
-                  Access tractors, bulk inputs, and farm support, all in one platform.
+                  Access tractors, bulk inputs, and farm support exclusively.
                 </motion.p>
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -106,8 +112,13 @@ export default function IndexPage() {
             </div>
 
             {/* Right Section with Animated Image Swapping */}
-            <div className="lg:w-1/2 flex justify-center bg-blue-">
-              <div className="flex justify-center items-center relative w-[400px] h-[400px]">
+            <div className="lg:w-1/2 flex justify-end bg-blue-">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 5, ease: "easeInOut" }}
+                className="flex justify-center items-center relative w-[400px] h-[400px]"
+              >
                 <AnimatePresence mode="wait">
                   <motion.img
                     key={tractorImages[index]}
@@ -120,7 +131,7 @@ export default function IndexPage() {
                     transition={{ duration: 0.6 }}
                   />
                 </AnimatePresence>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

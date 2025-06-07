@@ -18,7 +18,7 @@ interface StepItem {
 const steps: StepItem[] = [
   {
     title: "Request Mechanization Services",
-    description: "Agents schedule tractors and manage logistics.",
+    description: "Agents help farmers book and share tractors.",
     icon: <img src={Wrench} alt="Wrench icon" className="lg:w-10 w-12" />,
   },
   {
