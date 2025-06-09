@@ -7,6 +7,7 @@ import TractorImg1 from "../assets/Tractor.svg";
 import TractorImg2 from "../assets/farmer.svg";
 import TractorImg3 from "../assets/fertilisers.png";
 import TractorImg4 from "../assets/chemicals.svg";
+import TractorImg5 from "../assets/seedlings.png";
 import { Navbar } from "@/components/navbar";
 import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
@@ -33,7 +34,7 @@ export const MailIcon = () => (
   </svg>
 );
 
-const tractorImages = [TractorImg1, TractorImg2, TractorImg3, TractorImg4];
+const tractorImages = [TractorImg1, TractorImg2, TractorImg3, TractorImg4, TractorImg5];
 
 export default function IndexPage() {
   const [index, setIndex] = useState(0);
@@ -66,8 +67,8 @@ export default function IndexPage() {
                   transition={{ delay: 1, duration: 0.5 }}
                   className="text-5xl font-medium text-white flex flex-col gap-3"
                 >
-                  <span>Empowering Farmers </span>
-                  <span>That Feed Africa.</span>
+                  <span>Empowering The</span>
+                  <span>Farmers That Feed Africa.</span>
                 </motion.h1>
                 <motion.p
                   initial={{ opacity: 0 }}
