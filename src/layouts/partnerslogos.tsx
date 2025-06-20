@@ -4,26 +4,33 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 import { motion, useInView } from "framer-motion";
 
+import Company1 from "../assets/company1.svg";
+import Company2 from "../assets/company2.png";
+import Company3 from "../assets/company3.png";
+import Company4 from "../assets/company4.jpg";
+import Company5 from "../assets/company5.jpg";
+
+
 const partnerLogos = [
   {
     name: "Partner 1",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png",
+    logo: Company1,
   },
   {
     name: "Partner 2",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+    logo: Company2,
   },
   {
     name: "Partner 3",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+    logo: Company3,
   },
   {
     name: "Partner 4",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    logo: Company4,
   },
   {
     name: "Partner 5",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+    logo: Company5,
   },
 ];
 
@@ -91,7 +98,7 @@ export const PartnersLogos: React.FC = () => {
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="h-12 object-contain"
+                    className="h-24 object-contain"
                   />
                 </div>
               </li>

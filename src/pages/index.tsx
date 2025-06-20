@@ -38,7 +38,7 @@ const tractorImages = [TractorImg1, TractorImg2, TractorImg3, TractorImg4, Tract
 
 export default function IndexPage() {
   const [index, setIndex] = useState(0);
-
+ 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % tractorImages.length);
