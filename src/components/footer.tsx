@@ -6,8 +6,6 @@ import LaptopImg from "../assets/desktop.png";
 import partnerBanner from "../assets/partner-banner.png";
 import { Button } from "@heroui/button";
 
-
-
 const FooterSection: React.FC = () => {
   return (
     <footer className="lg:px-20 px-5 bg-[#0B342A] text-white  rounded-t-[3vw]">
@@ -20,8 +18,9 @@ const FooterSection: React.FC = () => {
               Get started with Idle Farmer
             </h2>
             <p className="text-sm mb-4">
-              Manage your farm, connect with agents, place orders, and access
-              insights.
+              Enrol farmers, book tractors, collect bulk orders, and provide
+              real-time assistance and support. Can we add a mobile phone
+              screenshot?
             </p>
             <div>
               <Button className="bg-[#F2FF79] text-black px-4 py-2 rounded-full font-semibold">
@@ -51,15 +50,18 @@ const FooterSection: React.FC = () => {
 
           {/* Content */}
           <div className="relative z-10 text-center text-white flex flex-col lg:gap-3">
-            <h2 className="lg:text-3xl text-2xl font-semibold mb-2">Partner With Us</h2>
+            <h2 className="lg:text-3xl text-2xl font-semibold mb-2">
+              Partner With Us
+            </h2>
             <p className="text-sm mb-4 max-w-md">
-              Are you an NGO, agribusiness or government agency? Let’s
-              collaborate to uplift the farming communities sustainably.
+              Are you a Tractor owner, Input supplier, or Agricultural
+              government agency. Let’s collaborate to uplift the farming
+              communities sustainably.
             </p>
             <div className="">
-                <Button className="bg-[#F2FF79] text-black px-4 py-2 rounded-full font-semibold">
-                  Become a Partner
-                </Button>
+              <Button className="bg-[#F2FF79] text-black px-4 py-2 rounded-full font-semibold">
+                Become a Partner
+              </Button>
             </div>
           </div>
         </div>
@@ -71,10 +73,10 @@ const FooterSection: React.FC = () => {
           {/* Contact Info */}
           <div className="grid gap-2">
             <h3 className="font-bold mb-3 ">Head Office</h3>
-            <p>Idlefarmer Farms, Ososa, Ogun State</p>
-            <p>Email: info@idlefarmer.ng</p>
-            <p>Phone: +234 903 000 0001</p>
-            <p>WhatsApp: +234 903 000 0003</p>
+            <p>Address: 1 Rabambo Farms, Bassa, Plateau State</p>
+            <p>Email: contact@idlefarmer.africa</p>
+            <p>Phone: +234 702 678 4587 </p>
+            <p>WhatsApp: +234 905 63220 83 </p>
           </div>
 
           {/* Footer Links: About */}
@@ -84,7 +86,7 @@ const FooterSection: React.FC = () => {
               <li>Company Profile</li>
               <li>Our Team</li>
               <li>Case Studies</li>
-              <li>Success Stories</li>
+              <li>Service Offerings</li>
             </ul>
           </div>
 
@@ -92,10 +94,8 @@ const FooterSection: React.FC = () => {
           <div className="grid gap-2 lg:justify-center">
             <h3 className="font-bold mb-3">For Farmers</h3>
             <ul className="space-y-2">
-              <li>How It Works</li>
-              <li>Get Started</li>
-              <li>Use Our App</li>
-              <li>FAQs</li>
+              <li>Find an Agent</li>
+              <li>Farmer Clusters</li>
             </ul>
           </div>
 
@@ -104,9 +104,17 @@ const FooterSection: React.FC = () => {
             <h3 className="font-bold mb-3">For Agents</h3>
             <ul className="space-y-2">
               <li>Become an Agent</li>
-              <li>Join our Network</li>
-              <li>Agent Rewards</li>
-              <li>Agent Portal</li>
+              <li>Agent Network</li>
+            </ul>
+          </div>
+          {/* Footer Links: For Partners */}
+          <div className="grid gap-2 lg:justify-start  justify-center">
+            <h3 className="font-bold mb-3">Partners</h3>
+            <ul className="space-y-2">
+              <li>Input Suppliers </li>
+              <li>Tractor Owners</li>
+              <li>Fleet Management</li>
+              <li>Inventory Management </li>
             </ul>
           </div>
         </div>
@@ -159,9 +167,11 @@ const FooterSection: React.FC = () => {
           <div className="flex lg:justify-end gap-4 ">
             <div className="">
               <h1 className=" text-xl font-bold text-white">
-              <span className="text-xl self-center ">IdleFarmer</span>
-              <span className="text-[#F2FF79] text-3xl font-extrabold">.</span>
-            </h1>
+                <span className="text-xl self-center ">IdleFarmer</span>
+                <span className="text-[#F2FF79] text-3xl font-extrabold">
+                  .
+                </span>
+              </h1>
               <p className="text-sm text-gray-300 mt-1">Copyright © 2024</p>
             </div>
           </div>
