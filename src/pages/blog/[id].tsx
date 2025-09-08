@@ -10,11 +10,11 @@ import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 const blogPosts = [
   {
     id: 1,
-    title: "Getting Started with Next.js 15",
+    title: "Agritech Adoption in Rural Africa: Breaking Barriers and Building Trust",
     description:
-      "Learn the fundamentals of Next.js 15 and build your first modern web application with the latest features.",
+      "",
     content: `
-# Getting Started with Next.js 15
+# Agritech Adoption in Rural Africa: Breaking Barriers and Building Trust
 
 Next.js 15 introduces several exciting features that make building React applications even more powerful and developer-friendly. In this comprehensive guide, we'll explore the key improvements and learn how to leverage them in your projects.
 

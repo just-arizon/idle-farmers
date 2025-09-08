@@ -17,16 +17,16 @@ export default function BlogPage() {
   const blogPosts = [
   {
     id: 1,
-    title: "Getting Started with Next.js 15",
+    title: "Agritech Adoption in Rural Africa",
     description:
-      "Learn the fundamentals of Next.js 15 and build your first modern web application with the latest features.",
+      "A century ago, people had basic needs like food, water and shelter.",
     content:
-      "Next.js 15 introduces several exciting features that make building React applications even more powerful...",
-    author: "Sarah Johnson",
+      "A century ago, people had basic needs like food, water and shelter. Farmers were committed to having many children, who would grow up to become farmhands...",
+    author: "Kosisochukwu Charity Ani",
     date: "2024-01-15",
     readTime: "5 min read",
-    tags: ["Next.js", "React", "Web Development"],
-    image: "/nextjs-development.png",
+    tags: ["tech", "agriculture"],
+    image: "@/assets/agritechImg.jpg",
   },
   {
     id: 2,
