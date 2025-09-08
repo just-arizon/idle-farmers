@@ -83,16 +83,16 @@ export const Navbar = () => {
       <NavbarMenu>
         
         <div className="mx-0 mt-2 flex flex-col gap-2 ">
-          {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
+          {siteConfig.navItems.map((item) => (
+            <NavbarItem key={item.href}>
               <Link
-                className="text-sm font-normal text- hover:text-[#F2FF79]"
-                href="#"
-                size="lg"
+                underline="hover"
+                className="text-white hover:text-[#F2FF79] text-sm font-normal"
+                href={item.href}
               >
                 {item.label}
               </Link>
-            </NavbarMenuItem>
+            </NavbarItem>
           ))}
         </div>
       </NavbarMenu>

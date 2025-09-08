@@ -6,7 +6,7 @@ export const siteConfig = {
   navItems: [
     {
       label: "Blog",
-      href: "/",
+      href: "/blog",
     },
     // {
     //   label: "Privacy Policy",
@@ -14,16 +14,7 @@ export const siteConfig = {
     // },
 
   ],
-  navMenuItems: [
-    {
-      label: "Blog",
-      href: "/financial-inclusion",
-    },
-    // {
-    //   label: "Privacy Policy",
-    //   href: "/privacy",
-    // }
-  ],
+
   links: {
     github: "https://github.com/frontio-ai/heroui",
     twitter: "https://twitter.com/hero_ui",
