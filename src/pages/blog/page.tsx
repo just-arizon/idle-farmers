@@ -10,70 +10,69 @@ import {
 import { Link } from "@heroui/link";
 import { Badge } from "@/components/ui/badge";
 import Img1 from "@/assets/agritechImg.jpg"
+import Img2 from "@/assets/disabilityImg.jpg";
+
 
 export default function BlogPage() {
 
   const blogPosts = [
   {
     id: 1,
-    title: "Agritech Adoption in Rural Africa",
+    title: "Agritech Adoption in Rural Africa: Breaking Barriers and Building Trust",
     description:
-      "A century ago, people had basic needs like food, water and shelter.",
-    content:
-      "A century ago, people had basic needs like food, water and shelter. Farmers were committed to having many children, who would grow up to become farmhands...",
+      "A century ago, people had basic needs like food, water and shelter. Farmers were committed to having many children, who would grow up to become farmhands, leading to larger cultivation and bigger yields...",
     author: "Kosisochukwu Charity Ani",
-    date: "2024-01-15",
+    date: "2025-03-25",
     readTime: "5 min read",
     tags: ["tech", "agriculture"],
     image: Img1,
   },
   {
     id: 2,
-    title: "Mastering TypeScript for React",
-    description: "Dive deep into TypeScript patterns and best practices for building type-safe React applications.",
-    content: "TypeScript has become an essential tool for React developers. In this comprehensive guide...",
-    author: "Mike Chen",
-    date: "2024-01-12",
+    title: "A New Era for Inclusive Agriculture: Inclusion and Empowerment in Nigeria's Farm Cities Project",
+    description: "At IdleFarmer, our vision is to empower every farmer to be a thriving agri-entrepreneur. We believe that to build a resilient and prosperous agricultural sector...",
+    author: "Kosisochukwu Charity Ani",
+    date: "2025-03-12",
     readTime: "8 min read",
-    tags: ["TypeScript", "React", "JavaScript"],
-    image: "/typescript-code.png",
+    tags: ["health", "support", "skills", "marketplace"],
+    image: Img2,
   },
-  {
-    id: 3,
-    title: "Building Responsive UIs with Tailwind CSS",
-    description:
-      "Create beautiful, responsive user interfaces using Tailwind CSS utility classes and modern design principles.",
-    content: "Tailwind CSS revolutionizes how we approach styling in modern web development...",
-    author: "Emma Davis",
-    date: "2024-01-10",
-    readTime: "6 min read",
-    tags: ["Tailwind CSS", "CSS", "UI/UX"],
-    image: "/responsive-web-design.png",
-  },
-  {
-    id: 4,
-    title: "State Management in Modern React",
-    description:
-      "Explore different state management solutions and learn when to use each approach in your React applications.",
-    content: "State management is one of the most important aspects of building React applications...",
-    author: "Alex Rodriguez",
-    date: "2024-01-08",
-    readTime: "10 min read",
-    tags: ["React", "State Management", "Zustand"],
-    image: "/react-state-management.png",
-  },
-  {
-    id: 5,
-    title: "API Design Best Practices",
-    description:
-      "Learn how to design clean, maintainable APIs that scale with your application and provide great developer experience.",
-    content: "Designing good APIs is crucial for building maintainable and scalable applications...",
-    author: "Jordan Kim",
-    date: "2024-01-05",
-    readTime: "7 min read",
-    tags: ["API", "Backend", "REST"],
-    image: "/api-development.png",
-  },
+  // {
+  //   id: 3,
+  //   title: "Building Responsive UIs with Tailwind CSS",
+  //   description:
+  //     "Create beautiful, responsive user interfaces using Tailwind CSS utility classes and modern design principles.",
+  //   content: "Tailwind CSS revolutionizes how we approach styling in modern web development...",
+  //   author: "Emma Davis",
+  //   date: "2024-01-10",
+  //   readTime: "6 min read",
+  //   tags: ["Tailwind CSS", "CSS", "UI/UX"],
+  //   image: "/responsive-web-design.png",
+  // },
+  // {
+  //   id: 4,
+  //   title: "State Management in Modern React",
+  //   description:
+  //     "Explore different state management solutions and learn when to use each approach in your React applications.",
+  //   content: "State management is one of the most important aspects of building React applications...",
+  //   author: "Alex Rodriguez",
+  //   date: "2024-01-08",
+  //   readTime: "10 min read",
+  //   tags: ["React", "State Management", "Zustand"],
+  //   image: "/react-state-management.png",
+  // },
+  // {
+  //   id: 5,
+  //   title: "API Design Best Practices",
+  //   description:
+  //     "Learn how to design clean, maintainable APIs that scale with your application and provide great developer experience.",
+  //   content: "Designing good APIs is crucial for building maintainable and scalable applications...",
+  //   author: "Jordan Kim",
+  //   date: "2024-01-05",
+  //   readTime: "7 min read",
+  //   tags: ["API", "Backend", "REST"],
+  //   image: "/api-development.png",
+  // },
 ];
   return (
     <DefaultLayout>
@@ -83,7 +82,8 @@ export default function BlogPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-foreground mb-4 text-balance">IdleFarmer Blog</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Insights, tutorials, and best practices for modern web development
+            Insights, Agritech updates and best modern farming practices.
+Where farming meets innovation
           </p>
         </div>
 
