@@ -5,6 +5,7 @@ import { Link } from "@heroui/link";
 import { Button } from "components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import Img1 from "@/assets/agritechImg.jpg"
 
 // Sample blog data - in a real app, this would come from a database or CMS
 const blogPosts = [
@@ -14,60 +15,89 @@ const blogPosts = [
     description:
       "",
     content: `
-# Agritech Adoption in Rural Africa: Breaking Barriers and Building Trust
 
-Next.js 15 introduces several exciting features that make building React applications even more powerful and developer-friendly. In this comprehensive guide, we'll explore the key improvements and learn how to leverage them in your projects.
+A century ago, people had basic needs like food, water and shelter. Farmers were committed to having many children, who would grow up to become farmhands, leading to larger cultivation and bigger yields, the definition of wealth in 19th- and 20th-century African society. The industrial revolution and technology are changing not just how we define wealth, but also how we grow food, build wealth, nurture relationships, and even raise children.
 
-## What's New in Next.js 15
+In recent years, the African continent has seen a surge in technological innovation, with digital tools and platforms helping to shape everything from healthcare to agriculture. Yet, despite the promise of technology, rural areas across Africa remain a significant challenge for widespread tech adoption. This is due to various factors such as, limited access to infrastructure, low digital literacy rates, a lack of trust in digital systems and wrong tools which do not address the needs of the average rural farmer.Technology is revolutionizing every sector, and agriculture in rural Africa can't be an exception. 
 
-The latest version of Next.js brings significant improvements to performance, developer experience, and new features that streamline the development process.
 
-### Enhanced App Router
+## The Importance of Technology in Rural Africa
 
-The App Router continues to evolve with better performance optimizations and more intuitive APIs. The new version includes:
+According to the World Bank, agriculture contributes to 23% of Africa’s Gross Domestic Product (GDP) and employs 65% of the continent’s labor force. This highlights the critical role that agriculture plays in Africa’s economic development.
+Rural Africa holds significant potential for tech-driven growth, especially in agriculture, which remains the backbone of many economies. While the continent has made strides in tech development, rural areas continue to lag behind in adopting digital solutions that can boost productivity and international trade, empower farmers, improve livelihoods, and even transform local economies. 
 
-- Improved server components with better streaming
-- Enhanced client-side navigation
-- Better error boundaries and loading states
+However, the adoption of tech solutions in these areas faces many obstacles, limiting its full potential. The barriers and opportunities of tech adoption in rural Africa exist because of the insurmountable gaps in infrastructure, accessibility and illiteracy.
 
-### Turbopack Integration
+When we think of agricultural innovations, free seedlings or subsidized fertilizers come to mind. While seeds and fertilizers are important the do not bridge the gap in modern farming practices or boost access 
+Imagine an Uber for farmers where they can list their Tractors, Plows, Seed Drills, Sprayers, Reapers, Shellers, Milling Machines for other farmers to rent. 
+An Airbnb for farmers to list storage and processing facilities for rent which serves as a central point for other farmers to store or process their produce for easy access to the buyers.
 
-Next.js 15 comes with improved Turbopack integration, offering:
+Better still an Amazon which serves as a digital global marketplace for farmers to sell their produce, an offline app for weather forecasting and data-driven tools to improve crop yields can make a massive difference in rural communities,  These tools don’t have to be high-tech or complicated; they just need to be simple, accessible, and affordable.
 
-- Faster development builds
-- Better hot module replacement
-- Reduced memory usage during development
+### Tech adoption in rural Africa is not an option but a crucial step for:
 
-## Getting Started
+- **Economic Empowerment**: Digital tools can help farmers increase productivity, improve market access, attract investment and drive economic growth.
 
-To create a new Next.js 15 project, run:
+- **Educational Advancement**: Technology can bring quality education to remote areas, bridging the urban-rural divide.
 
-\`\`\`bash
-npx create-next-app@latest my-app
-cd my-app
-npm run dev
-\`\`\`
+- **Healthcare Improvement**: Mobile health solutions provide vital information and resources, improving health outcomes in underserved communities.
 
-This will set up a new project with all the latest features and best practices configured out of the box.
+- **Financial Inclusion**: Mobile money and digital banking services open up financial access to those previously excluded, boosting economic participation.
 
-## Key Features to Explore
+- **Data Driven Decision-Making**:  data gathered over the years can be harnessed to solve local and unique problems affecting our crops such as pests, diseases, drought and also improve modern farming practices.
 
-1. **Server Components**: Build faster applications with server-side rendering
-2. **Streaming**: Improve user experience with progressive loading
-3. **Suspense Integration**: Better loading states and error handling
-4. **Improved TypeScript Support**: Enhanced type safety and developer experience
+### Barriers to Tech Adoption in Rural Africa
 
-## Conclusion
+While the advantages of technology are clear, several barriers stand in the way of its adoption in rural Africa. These challenges include:
 
-Next.js 15 represents a significant step forward in React framework development. With its focus on performance, developer experience, and modern web standards, it's an excellent choice for building production-ready applications.
+- **Infrastructure Gaps**: According to the World Bank Group, “nearly 600 million people in Sub-Saharan Africa live without access to electricity”. The lack of basic infrastructure such as good road networks, reliable internet access and electricity is one of the biggest hurdles. Many rural communities still face frequent power outages, and internet connectivity can be either sporadic or completely absent. Even when infrastructure exists, the high costs of accessing it can make it out of reach for the farmers who need it most. 
 
-Start exploring these features in your next project and experience the improved development workflow firsthand.
+- **Digital Literacy** : Many people in rural Africa are not familiar with how to use digital tools effectively. The absence of basic digital literacy skills makes it difficult for individuals to engage with and benefit from new technologies. This knowledge gap is often compounded by a lack of accessible training resources. A report by the African Development Bank shows that the adoption of precision agriculture technologies can increase crop yields by up to 300% and reduce water usage by up to 60%. 
+
+- **Cultural Resistance and Trust Issues** : In rural areas, people often rely on traditional agricultural practices passed down through generations. New technologies are sometimes met with skepticism or fear, especially when they come from outside the community. Issues such as data privacy, security, land grabbing and the true intentions of technology providers further fuel this mistrust.
+
+
+
+### Breaking Barriers: Strategies for Overcoming Challenges
+
+Despite these challenges, numerous efforts are underway to drive technology adoption in rural Africa. Here are some strategies that are already making an impact:
+
+**Mobile Solutions**: A Game Changer
+
+Mobile phones are a powerful tool for tech adoption in rural areas. With more than 80% of Africans owning mobile phones, these devices are often the gateway to digital services.
+
+In agriculture, mobile apps are transforming how farmers access information. For instance, mobile weather forecasting apps help farmers plan their planting and harvesting schedules, while digital marketplaces like M-Farm in Kenya enable farmers to connect directly with buyers, eliminating middlemen and IdleFarmer in Nigeria enable farmers to lease tractors, trailers and other farm machines at affordable rates.
+
+Mobile money platforms like M-Pesa have also empowered rural communities to engage in digital financial services, including mobile banking, payments, and money transfers, significantly enhancing financial inclusion.
+
+**Community-Based Education and Training**
+
+To address the digital literacy gap, community-based training programs are essential. These programs are often designed to teach basic digital skills and demonstrate how to use mobile apps and websites effectively.
+The “train the trainer” model has been particularly successful in rural Africa. Local champions or community leaders who are already trusted figures in their communities are trained to teach others. As a result, technology adoption becomes more organic, with community buy-in and engagement.
+
+**Building Trust Through Local Partnerships**
+For tech adoption to succeed, it must be designed with the local context in mind. International tech providers must collaborate with local organizations, governments, civil societies  and community leaders to ensure that solutions meet the needs of rural farmers and resonate with their values.
+Partnerships with local organizations can help alleviate fears about new technologies and foster trust. Additionally, transparent communication about data privacy and security can help mitigate concerns about the misuse of personal information.
+
+**Government and Policy Support**
+Governments play a critical role in creating the conditions for successful tech adoption. By prioritizing rural infrastructure, security, investing in digital literacy programs, and incentivizing tech companies to reach underserved areas, governments can reduce many of the barriers to adoption.
+
+Countries like **Rwanda** and **Kenya** have been at the forefront of building digital ecosystems and promoting policies that encourage tech-driven growth. Rwanda’s government has launched initiatives such as Smart Agriculture, which incorporates ICT tools to boost agricultural productivity. These efforts have helped make tech more accessible and effective for rural communities.
+
+
+## The Path Ahead: The Future of Tech in Rural Africa
+While the road to widespread tech adoption in rural Africa is not without its challenges, the potential rewards are immense. With the right investments in infrastructure, education, and trust-building, technology can empower rural communities to thrive in an increasingly digital world.
+
+Tech in rural Africa is not just about providing technology it's about creating solutions that work for the people. By overcoming barriers and fostering trust through education and collaboration, rural communities can leverage technology to drive economic growth, improve livelihoods, and bridge the divide between urban and rural areas.
+
+The future is bright, and with continued effort, technology will be the key to unlocking the immense potential of rural communities across the continent. Tech adoption in rural Africa has the power to revolutionize agriculture, enhance access to education and healthcare, and foster economic empowerment. However, it requires a collective effort governments, Pan-African technology providers, and local communities must work together to break down the barriers that stand in the way.
+
     `,
-    author: "Sarah Johnson",
+    author: "Kosisochukwu Charity Ani",
     date: "2024-01-15",
     readTime: "5 min read",
-    tags: ["Next.js", "React", "Web Development"],
-    image: "/nextjs-development.png",
+    tags: ["tech", "agriculture", "farming"],
+    image: Img1,
   },
   {
     id: 2,
@@ -665,7 +695,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Back Button */}
-        <Link href="/">
+        <Link href="/blog">
           <Button variant="ghost" className="mb-6 hover:bg-accent">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Blog
@@ -724,38 +754,54 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Article Content */}
         <article className="prose prose-lg max-w-none">
-          <div
-            className="text-foreground leading-relaxed"
-            dangerouslySetInnerHTML={{
-              __html: post.content
-                .replace(/\n/g, "<br />")
-                .replace(
-                  /```([^`]+)```/g,
-                  '<pre class="bg-muted p-4 rounded-lg overflow-x-auto"><code>$1</code></pre>'
-                )
-                .replace(
-                  /`([^`]+)`/g,
-                  '<code class="bg-muted px-2 py-1 rounded text-sm">$1</code>'
-                )
-                .replace(
-                  /^# (.+)$/gm,
-                  '<h1 class="text-3xl font-bold mt-8 mb-4">$1</h1>'
-                )
-                .replace(
-                  /^## (.+)$/gm,
-                  '<h2 class="text-2xl font-semibold mt-6 mb-3">$1</h2>'
-                )
-                .replace(
-                  /^### (.+)$/gm,
-                  '<h3 class="text-xl font-medium mt-4 mb-2">$1</h3>'
-                ),
-            }}
-          />
-        </article>
+  <div
+    className="text-foreground leading-relaxed"
+    dangerouslySetInnerHTML={{
+      __html: post.content
+        // Convert code blocks
+        .replace(
+          /```([\s\S]*?)```/g,
+          '<pre class="bg-muted p-4 rounded-lg overflow-x-auto"><code>$1</code></pre>'
+        )
+        // Convert inline code
+        .replace(
+          /`([^`]+)`/g,
+          '<code class="bg-muted px-2 py-1 rounded text-sm">$1</code>'
+        )
+         // Bold text (**text** or __text__)
+        .replace(
+          /\*\*(.+?)\*\*|__(.+?)__/g,
+          '<strong>$1$2</strong>'
+        )
+        // H1
+        .replace(
+          /^# (.+)$/gm,
+          '<h1 class="text-3xl font-bold mt-8 mb-4">$1</h1>'
+        )
+        // H2
+        .replace(
+          /^## (.+)$/gm,
+          '<h2 class="text-2xl font-semibold mt-6 mb-3">$1</h2>'
+        )
+        // H3
+        .replace(
+          /^### (.+)$/gm,
+          '<h3 class="text-xl font-medium mt-4 mb-2">$1</h3>'
+        )
+        // Bullet points (- item)
+        .replace(
+          /(?:^|\n)- (.+)/g,
+          (match, item) => `<ul class="list-disc pl-6"><li>${item}</li></ul>`
+        )
+        // Line breaks
+        .replace(/\n/g, "<br />"),
+    }}
+  />
+</article>
 
         {/* Back to Blog Button */}
         <div className="mt-12 pt-8 border-t border-border">
-          <Link href="/">
+          <Link href="/blog">
             <Button className="w-full sm:w-auto">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to All Posts

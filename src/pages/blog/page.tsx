@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card"
 import { Link } from "@heroui/link";
 import { Badge } from "@/components/ui/badge";
+import Img1 from "@/assets/agritechImg.jpg"
 
 export default function BlogPage() {
 
@@ -26,7 +27,7 @@ export default function BlogPage() {
     date: "2024-01-15",
     readTime: "5 min read",
     tags: ["tech", "agriculture"],
-    image: "@/assets/agritechImg.jpg",
+    image: Img1,
   },
   {
     id: 2,
