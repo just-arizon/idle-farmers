@@ -101,7 +101,7 @@ The future is bright, and with continued effort, technology will be the key to u
   },
   {
     id: 2,
-    title: "Mastering TypeScript for React",
+    title: "From Burden to Business: How IdleFarmer is Empowering a New Generation of Agri-Entrepreneurs",
     description:
       "Dive deep into TypeScript patterns and best practices for building type-safe React applications.",
     content: `
