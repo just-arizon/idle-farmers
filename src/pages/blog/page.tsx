@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge";
 import Img1 from "@/assets/agritechImg.jpg"
 import Img2 from "@/assets/disabilityImg.jpg";
 import Img3 from "@/assets/businessImg.jpg";
+import Img4 from "@/assets/TractorImg.jpg";
 
 
 export default function BlogPage() {
@@ -33,7 +34,7 @@ export default function BlogPage() {
     title: "A New Era for Inclusive Agriculture: Inclusion and Empowerment in Nigeria's Farm Cities Project",
     description: "At IdleFarmer, our vision is to empower every farmer to be a thriving agri-entrepreneur. We believe that to build a resilient and prosperous agricultural sector...",
     author: "Kosisochukwu Charity Ani",
-    date: "2025-04-06",
+    date: "2025-09-06",
     readTime: "3 min read",
     tags: ["health", "support", "skills", "marketplace"],
     image: Img2,
@@ -49,18 +50,17 @@ export default function BlogPage() {
     tags: ["business", "tech", "entrepreneurs"],
     image: Img3,
   },
-  // {
-  //   id: 4,
-  //   title: "State Management in Modern React",
-  //   description:
-  //     "Explore different state management solutions and learn when to use each approach in your React applications.",
-  //   content: "State management is one of the most important aspects of building React applications...",
-  //   author: "Alex Rodriguez",
-  //   date: "2024-01-08",
-  //   readTime: "10 min read",
-  //   tags: ["React", "State Management", "Zustand"],
-  //   image: "/react-state-management.png",
-  // },
+  {
+    id: 4,
+    title: "Agritech Innovation in Africa: Transforming Agriculture with Precision Technologies",
+    description:
+      "Agricultural practices in Africa are often traditions that are passed down from generation to generation. As time evolves, traditional farming practices have also evolved, especially with the increasing rate of climate change...",
+    author: "Kosisochukwu Charity Ani",
+    date: "2025-04-5",
+    readTime: "3 min read",
+    tags: ["Tractors", "GPS", "AI"],
+    image: Img4,
+  },
   // {
   //   id: 5,
   //   title: "API Design Best Practices",
