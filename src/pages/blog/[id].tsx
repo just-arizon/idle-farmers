@@ -675,11 +675,7 @@ Good API design is about creating intuitive, consistent, and well-documented int
   },
 ];
 
-interface BlogPostPageProps {
-  params: {
-    id: string;
-  };
-}
+
 
 export default function BlogPostPage() {
   const { id } = useParams<{ id: string }>();
@@ -787,7 +783,7 @@ export default function BlogPostPage() {
                 // Bullet points (- item)
                 .replace(
                   /(?:^|\n)- (.+)/g,
-                  (match, item) =>
+                  (item) =>
                     `<ul class="list-disc pl-6"><li>${item}</li></ul>`
                 )
                 // Line breaks
