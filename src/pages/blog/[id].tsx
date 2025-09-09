@@ -1,19 +1,17 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "@heroui/link";
+import { useParams, Link } from "react-router-dom";
 // import { notFound } from "next/navigation";
-import { Button } from "components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
-import Img1 from "@/assets/agritechImg.jpg"
+import Img1 from "@/assets/agritechImg.jpg";
 
 // Sample blog data - in a real app, this would come from a database or CMS
 const blogPosts = [
   {
     id: 1,
-    title: "Agritech Adoption in Rural Africa: Breaking Barriers and Building Trust",
-    description:
-      "",
+    title:
+      "Agritech Adoption in Rural Africa: Breaking Barriers and Building Trust",
+    description: "",
     content: `
 
 A century ago, people had basic needs like food, water and shelter. Farmers were committed to having many children, who would grow up to become farmhands, leading to larger cultivation and bigger yields, the definition of wealth in 19th- and 20th-century African society. The industrial revolution and technology are changing not just how we define wealth, but also how we grow food, build wealth, nurture relationships, and even raise children.
@@ -101,7 +99,8 @@ The future is bright, and with continued effort, technology will be the key to u
   },
   {
     id: 2,
-    title: "From Burden to Business: How IdleFarmer is Empowering a New Generation of Agri-Entrepreneurs",
+    title:
+      "From Burden to Business: How IdleFarmer is Empowering a New Generation of Agri-Entrepreneurs",
     description:
       "Dive deep into TypeScript patterns and best practices for building type-safe React applications.",
     content: `
@@ -682,20 +681,20 @@ interface BlogPostPageProps {
   };
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-    const { id } = useParams(); // Get the dynamic 'id' from the URL
-  const postId = parseInt(id as string); // Convert to a number
+export default function BlogPostPage() {
+  const { id } = useParams<{ id: string }>();
+  const postId = parseInt(id as string, 10);
   const post = blogPosts.find((p) => p.id === postId);
 
   if (!post) {
-    notFound();
+    return <div className="p-8 text-center text-red-500">Post not found.</div>;
   }
 
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Back Button */}
-        <Link href="/blog">
+        <Link to="/blog">
           <Button variant="ghost" className="mb-6 hover:bg-accent">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Blog
@@ -754,54 +753,52 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Article Content */}
         <article className="prose prose-lg max-w-none">
-  <div
-    className="text-foreground leading-relaxed"
-    dangerouslySetInnerHTML={{
-      __html: post.content
-        // Convert code blocks
-        .replace(
-          /```([\s\S]*?)```/g,
-          '<pre class="bg-muted p-4 rounded-lg overflow-x-auto"><code>$1</code></pre>'
-        )
-        // Convert inline code
-        .replace(
-          /`([^`]+)`/g,
-          '<code class="bg-muted px-2 py-1 rounded text-sm">$1</code>'
-        )
-         // Bold text (**text** or __text__)
-        .replace(
-          /\*\*(.+?)\*\*|__(.+?)__/g,
-          '<strong>$1$2</strong>'
-        )
-        // H1
-        .replace(
-          /^# (.+)$/gm,
-          '<h1 class="text-3xl font-bold mt-8 mb-4">$1</h1>'
-        )
-        // H2
-        .replace(
-          /^## (.+)$/gm,
-          '<h2 class="text-2xl font-semibold mt-6 mb-3">$1</h2>'
-        )
-        // H3
-        .replace(
-          /^### (.+)$/gm,
-          '<h3 class="text-xl font-medium mt-4 mb-2">$1</h3>'
-        )
-        // Bullet points (- item)
-        .replace(
-          /(?:^|\n)- (.+)/g,
-          (match, item) => `<ul class="list-disc pl-6"><li>${item}</li></ul>`
-        )
-        // Line breaks
-        .replace(/\n/g, "<br />"),
-    }}
-  />
-</article>
+          <div
+            className="text-foreground leading-relaxed"
+            dangerouslySetInnerHTML={{
+              __html: post.content
+                // Convert code blocks
+                .replace(
+                  /```([\s\S]*?)```/g,
+                  '<pre class="bg-muted p-4 rounded-lg overflow-x-auto"><code>$1</code></pre>'
+                )
+                // Convert inline code
+                .replace(
+                  /`([^`]+)`/g,
+                  '<code class="bg-muted px-2 py-1 rounded text-sm">$1</code>'
+                )
+                // Bold text (**text** or __text__)
+                .replace(/\*\*(.+?)\*\*|__(.+?)__/g, "<strong>$1$2</strong>")
+                // H1
+                .replace(
+                  /^# (.+)$/gm,
+                  '<h1 class="text-3xl font-bold mt-8 mb-4">$1</h1>'
+                )
+                // H2
+                .replace(
+                  /^## (.+)$/gm,
+                  '<h2 class="text-2xl font-semibold mt-6 mb-3">$1</h2>'
+                )
+                // H3
+                .replace(
+                  /^### (.+)$/gm,
+                  '<h3 class="text-xl font-medium mt-4 mb-2">$1</h3>'
+                )
+                // Bullet points (- item)
+                .replace(
+                  /(?:^|\n)- (.+)/g,
+                  (match, item) =>
+                    `<ul class="list-disc pl-6"><li>${item}</li></ul>`
+                )
+                // Line breaks
+                .replace(/\n/g, "<br />"),
+            }}
+          />
+        </article>
 
         {/* Back to Blog Button */}
         <div className="mt-12 pt-8 border-t border-border">
-          <Link href="/blog">
+          <Link to="/blog">
             <Button className="w-full sm:w-auto">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to All Posts
