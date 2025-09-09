@@ -11,6 +11,7 @@ import { Link } from "@heroui/link";
 import { Badge } from "@/components/ui/badge";
 import Img1 from "@/assets/agritechImg.jpg"
 import Img2 from "@/assets/disabilityImg.jpg";
+import Img3 from "@/assets/businessImg.jpg";
 
 
 export default function BlogPage() {
@@ -32,23 +33,22 @@ export default function BlogPage() {
     title: "A New Era for Inclusive Agriculture: Inclusion and Empowerment in Nigeria's Farm Cities Project",
     description: "At IdleFarmer, our vision is to empower every farmer to be a thriving agri-entrepreneur. We believe that to build a resilient and prosperous agricultural sector...",
     author: "Kosisochukwu Charity Ani",
-    date: "2025-03-12",
+    date: "2025-04-06",
     readTime: "3 min read",
     tags: ["health", "support", "skills", "marketplace"],
     image: Img2,
   },
-  // {
-  //   id: 3,
-  //   title: "Building Responsive UIs with Tailwind CSS",
-  //   description:
-  //     "Create beautiful, responsive user interfaces using Tailwind CSS utility classes and modern design principles.",
-  //   content: "Tailwind CSS revolutionizes how we approach styling in modern web development...",
-  //   author: "Emma Davis",
-  //   date: "2024-01-10",
-  //   readTime: "6 min read",
-  //   tags: ["Tailwind CSS", "CSS", "UI/UX"],
-  //   image: "/responsive-web-design.png",
-  // },
+  {
+    id: 3,
+    title: "From Burden to Business: How IdleFarmer is Empowering a New Generation of Agri-Entrepreneurs",
+    description:
+      "The job of a farmer is a complex one. They are parents to their crops, nurturing each plant from seed to harvest. They are financiers, saving, budgeting and investing in inputs like seeds and fertilizer. They are logistics and human resource managers...",
+    author: "Kosisochukwu Charity Ani",
+    date: "2025-08-17",
+    readTime: "2 min read",
+    tags: ["business", "tech", "entrepreneurs"],
+    image: Img3,
+  },
   // {
   //   id: 4,
   //   title: "State Management in Modern React",

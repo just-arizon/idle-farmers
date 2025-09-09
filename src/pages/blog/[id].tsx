@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import Img1 from "@/assets/agritechImg.jpg";
 import Img2 from "@/assets/disabilityImg.jpg";
+import Img3 from "@/assets/businessImg.jpg";
 
 // Sample blog data - in a real app, this would come from a database or CMS
 const blogPosts = [
@@ -141,123 +142,55 @@ IdleFarmer is not just a champion of this trend, but a participant in ensuring t
     tags: ["health", "support", "skill","marketplace"],
     image: Img2,
   },
-//   {
-//     id: 3,
-//     title: "Building Responsive UIs with Tailwind CSS",
-//     description:
-//       "Create beautiful, responsive user interfaces using Tailwind CSS utility classes and modern design principles.",
-//     content: `
-// # Building Responsive UIs with Tailwind CSS
+  {
+    id: 3,
+    title: "From Burden to Business: How IdleFarmer is Empowering a New Generation of Agri-Entrepreneurs",
+    description:
+      "",
+    content: `
+The job of a farmer is a complex one. They are parents to their crops, nurturing each plant from seed to harvest. They are financiers, saving, budgeting and investing in inputs like seeds and fertilizer. They are logistics and human resource managers, coordinating equipment and labor. They are salespersons, navigating markets to sell their produce and make profit. A farmer is, in every sense of the word, never idle.
 
-// Tailwind CSS revolutionizes how we approach styling in modern web development. This utility-first framework enables rapid UI development while maintaining design consistency.
+This is the powerful paradox behind our name, **IdleFarmer**. Our vision isn’t to make farmers literally idle, but to free them from the daily, mundane tasks that drain their time and resources. We are here to alleviate the burden, enabling you to focus on the strategic decisions that truly enhance your yield, sales, and livelihood. To help you move from burden to a more profitable agri-entrepreneur.
 
-// ## Why Tailwind CSS?
+## Pre-Planting: Laying the Groundwork for Prosperity
 
-// Tailwind CSS offers several advantages:
+Before a single seed goes into the soil, the groundwork for the entire season is laid. This pre-planting phase is the most critical time for planning. It’s when you prepare the soil, select the best seed varieties, maintain your equipment, and secure the finances for the season ahead. These tasks require time, accurate data, and often, significant capital.
 
-// - **Utility-First**: Build complex designs with simple utility classes
-// - **Responsive Design**: Built-in responsive modifiers
-// - **Customizable**: Easily customize the design system
-// - **Performance**: Purge unused CSS for optimal bundle size
+This is where IdleFarmer’s model takes root. We believe in the power of community, and our solution is built around the cluster system. By bringing together groups of up to 20 farmers in the same area, we create a robust network for:
 
-// ## Responsive Design Principles
 
-// ### Mobile-First Approach
+- **Fund Pooling**:  Farmers can pool their funds to buy quality fertilizers and seeds in bulk, securing significant discounts and ensuring access to essential resources at affordable rates.
 
-// Always start with mobile styles and enhance for larger screens:
+- **Shared Resources**: The cost of farming equipment and storage facilities can be a significant barrier to entry. Within a cluster, farmers can collectively rent machinery and use shared storage, reducing individual financial strain and increasing efficiency.
 
-// \`\`\`html
-// <div class="w-full md:w-1/2 lg:w-1/3">
-//   <!-- Content -->
-// </div>
-// \`\`\`
+- **Building a Financial Profile**: Every activity   from purchasing seeds to renting a tractor   is tracked on the IdleFarmer software. This digital record helps build a robust, credit-worthy financial report for each farmer. For the first time, you have the data you need to confidently access formal credit, investments, and grants that were previously out of reach.
 
-// ### Breakpoint System
+## The Planting Phase: Precision in Every Seed
+With the groundwork laid, the planting phase is a race against the clock. Precision is everything. Every seed must be planted at the right time, with the right amount of fertilizer and water, to ensure a strong start.
+The IdleFarmer platform serves as your digital companion during this crucial period. It helps you manage and record every action   from **seeding** and **fertilizing** to **irrigation** schedules and **pest control** applications. This meticulous **record-keeping** allows you to monitor your fields with confidence and make informed decisions, ensuring your young crops have the best possible chance to grow strong and healthy.
 
-// Tailwind uses intuitive breakpoint prefixes:
+### The Harvest: From Field to Fortune
 
-// - \`sm:\` - 640px and up
-// - \`md:\` - 768px and up  
-// - \`lg:\` - 1024px and up
-// - \`xl:\` - 1280px and up
-// - \`2xl:\` - 1536px and up
+The harvest is the moment when all your hard work comes to fruition. But this final phase comes with its own set of challenges, from protecting your produce from spoilage to navigating the volatile market.
 
-// ## Layout Patterns
+IdleFarmer ensures the value you’ve worked so hard to create doesn’t get lost in the final stretch.
 
-// ### Flexbox Layouts
 
-// Create flexible layouts with Flexbox utilities:
+- **Logistics & Processing**: We provide a fleet of vehicles and equipment for harvesting, processing, and transporting your produce. This ensures your crops are handled efficiently and delivered in perfect condition.
 
-// \`\`\`html
-// <div class="flex flex-col md:flex-row gap-4">
-//   <div class="flex-1">Main content</div>
-//   <div class="w-full md:w-64">Sidebar</div>
-// </div>
-// \`\`\`
+- **Inventory Tracking**: Our inventory tracker helps you digitally document your harvest rates, sales, and stock levels. This gives you a clear overview of your business performance, making it easier to plan for the future.
 
-// ### Grid Layouts
+- **A Digital Marketplace**: Perhaps most importantly, our digital marketplace connects you directly to buyers, bypassing the intermediaries who often eat into your profits. By giving you direct access to the market, we help you secure better prices and build lasting business relationships.
 
-// Build complex grids with CSS Grid utilities:
+IdleFarmer doesn’t just provide a service; we offer a partnership and community. We take on the “mundane” so you can focus on being the visionary, the leader, and the successful agri-entrepreneur you were meant to be.
 
-// \`\`\`html
-// <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-//   <div>Item 1</div>
-//   <div>Item 2</div>
-//   <div>Item 3</div>
-// </div>
-// \`\`\`
-
-// ## Component Patterns
-
-// ### Card Component
-
-// \`\`\`html
-// <div class="bg-white rounded-lg shadow-md overflow-hidden">
-//   <img class="w-full h-48 object-cover" src="image.jpg" alt="Card image">
-//   <div class="p-6">
-//     <h3 class="text-xl font-semibold mb-2">Card Title</h3>
-//     <p class="text-gray-600">Card description text goes here.</p>
-//   </div>
-// </div>
-// \`\`\`
-
-// ### Navigation Bar
-
-// \`\`\`html
-// <nav class="bg-white shadow-sm">
-//   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//     <div class="flex justify-between items-center h-16">
-//       <div class="flex-shrink-0">
-//         <img class="h-8 w-8" src="logo.svg" alt="Logo">
-//       </div>
-//       <div class="hidden md:block">
-//         <div class="ml-10 flex items-baseline space-x-4">
-//           <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-//           <a href="#" class="text-gray-900 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </nav>
-// \`\`\`
-
-// ## Best Practices
-
-// 1. **Use consistent spacing**: Stick to the spacing scale (4, 8, 16, etc.)
-// 2. **Leverage component classes**: Extract common patterns into components
-// 3. **Optimize for performance**: Use PurgeCSS to remove unused styles
-// 4. **Maintain design tokens**: Customize the theme for brand consistency
-
-// ## Conclusion
-
-// Tailwind CSS empowers developers to build responsive, beautiful UIs quickly and efficiently. By following these patterns and best practices, you can create maintainable and scalable design systems.
-//     `,
-//     author: "Emma Davis",
-//     date: "2024-01-10",
-//     readTime: "6 min read",
-//     tags: ["Tailwind CSS", "CSS", "UI/UX"],
-//     image: "/responsive-web-design.png",
-//   },
+    `,
+    author: "Kosisochukwu Charity Ani",
+    date: "2025-08-17",
+    readTime: "2 min read",
+    tags: ["business", "tech", "entrepreneurs"],
+    image: Img3,
+  },
 //   {
 //     id: 4,
 //     title: "State Management in Modern React",
