@@ -33,7 +33,7 @@ export default function BlogPage() {
     description: "At IdleFarmer, our vision is to empower every farmer to be a thriving agri-entrepreneur. We believe that to build a resilient and prosperous agricultural sector...",
     author: "Kosisochukwu Charity Ani",
     date: "2025-03-12",
-    readTime: "8 min read",
+    readTime: "3 min read",
     tags: ["health", "support", "skills", "marketplace"],
     image: Img2,
   },

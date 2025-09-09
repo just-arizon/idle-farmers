@@ -46,7 +46,6 @@ Better still an Amazon which serves as a digital global marketplace for farmers 
 - **Data Driven Decision-Making**:  data gathered over the years can be harnessed to solve local and unique problems affecting our crops such as pests, diseases, drought and also improve modern farming practices.
 
 ## Barriers to Tech Adoption in Rural Africa
-
 While the advantages of technology are clear, several barriers stand in the way of its adoption in rural Africa. These challenges include:
 
 - **Infrastructure Gaps**: According to the World Bank Group, “nearly 600 million people in Sub-Saharan Africa live without access to electricity”. The lack of basic infrastructure such as good road networks, reliable internet access and electricity is one of the biggest hurdles. Many rural communities still face frequent power outages, and internet connectivity can be either sporadic or completely absent. Even when infrastructure exists, the high costs of accessing it can make it out of reach for the farmers who need it most. 
@@ -55,14 +54,10 @@ While the advantages of technology are clear, several barriers stand in the way 
 
 - **Cultural Resistance and Trust Issues** : In rural areas, people often rely on traditional agricultural practices passed down through generations. New technologies are sometimes met with skepticism or fear, especially when they come from outside the community. Issues such as data privacy, security, land grabbing and the true intentions of technology providers further fuel this mistrust.
 
-
-
 ### Breaking Barriers: Strategies for Overcoming Challenges
-
 Despite these challenges, numerous efforts are underway to drive technology adoption in rural Africa. Here are some strategies that are already making an impact:
 
 **Mobile Solutions**: A Game Changer
-
 Mobile phones are a powerful tool for tech adoption in rural areas. With more than 80% of Africans owning mobile phones, these devices are often the gateway to digital services.
 
 In agriculture, mobile apps are transforming how farmers access information. For instance, mobile weather forecasting apps help farmers plan their planting and harvesting schedules, while digital marketplaces like M-Farm in Kenya enable farmers to connect directly with buyers, eliminating middlemen and IdleFarmer in Nigeria enable farmers to lease tractors, trailers and other farm machines at affordable rates.
@@ -70,7 +65,6 @@ In agriculture, mobile apps are transforming how farmers access information. For
 Mobile money platforms like M-Pesa have also empowered rural communities to engage in digital financial services, including mobile banking, payments, and money transfers, significantly enhancing financial inclusion.
 
 **Community-Based Education and Training**
-
 To address the digital literacy gap, community-based training programs are essential. These programs are often designed to teach basic digital skills and demonstrate how to use mobile apps and websites effectively.
 The “train the trainer” model has been particularly successful in rural Africa. Local champions or community leaders who are already trusted figures in their communities are trained to teach others. As a result, technology adoption becomes more organic, with community buy-in and engagement.
 
@@ -142,8 +136,8 @@ IdleFarmer is not just a champion of this trend, but a participant in ensuring t
 
     `,
     author: "Kosisochukwu Charity Ani",
-    date: "2025-03-12",
-    readTime: "2 min read",
+    date: "2025-09-06",
+    readTime: "3 min read",
     tags: ["health", "support", "skill","marketplace"],
     image: Img2,
   },
@@ -645,7 +639,7 @@ export default function BlogPostPage() {
         </div>
 
         {/* Article Header */}
-        <header className="mb-8">
+        <header className="mb-5">
           <div className="flex flex-wrap gap-2 mb-4">
             {post.tags.map((tag) => (
               <Badge key={tag} variant="secondary">

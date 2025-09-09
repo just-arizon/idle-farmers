@@ -108,7 +108,7 @@ const FooterSection: React.FC = () => {
             </ul>
           </div>
           {/* Footer Links: For Partners */}
-          <div className="grid gap-2 lg:justify-start  justify-center">
+          <div className="grid gap-2 justify-start">
             <h3 className="font-bold mb-3">Partners</h3>
             <ul className="space-y-2">
               <li>Input Suppliers </li>
