@@ -56,7 +56,7 @@ export default function BlogPage() {
     description:
       "Agricultural practices in Africa are often traditions that are passed down from generation to generation. As time evolves, traditional farming practices have also evolved, especially with the increasing rate of climate change...",
     author: "Kosisochukwu Charity Ani",
-    date: "2025-04-5",
+    date: "2025-04-05",
     readTime: "3 min read",
     tags: ["Tractors", "GPS", "AI"],
     image: Img4,
@@ -80,7 +80,7 @@ export default function BlogPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-foreground mb-4 text-balance">IdleFarmer Blog</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4 text-balance">Idlefarmers Blog</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
             Insights, Agritech updates and best modern farming practices.
 Where farming meets innovation
